@@ -155,9 +155,30 @@ button{padding:12px 20px;background:#d97706;color:white;border:none;border-radiu
 <p>Facebook • Instagram • YouTube</p>
 </footer>
 <script>
+<script>
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('service-worker.js');
+  window.addEventListener('load', async () => {
+    try {
+      const reg = await navigator.serviceWorker.register('/service-worker.js');
+
+      reg.update();
+
+      setInterval(() => {
+        reg.update();
+      }, 30000);
+
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        window.location.reload();
+      });
+
+    } catch (err) {
+      console.error('SW Error:', err);
+    }
+  });
 }
+</script>
+</script>
+<script>
 </script>
 </body>
 </html>
