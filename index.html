@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#8b5a2b">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pracheen Shiv Mandir Portal</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#faf7f0;color:#333}
+header{background:#8b5a2b;color:#fff;padding:16px 5%;position:sticky;top:0}
+nav{display:flex;justify-content:space-between;align-items:center}
+nav ul{display:flex;gap:18px;list-style:none;padding:0;margin:0;flex-wrap:wrap}
+nav a{color:white;text-decoration:none}
+.hero{padding:100px 5%;text-align:center;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('https://myadhyatm.com/wp-content/uploads/2024/07/1-80.jpg') center/cover;color:white}
+.btn{display:inline-block;padding:12px 20px;margin:8px;background:#d97706;color:#fff;text-decoration:none;border-radius:8px}
+section{padding:60px 5%}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:white;padding:20px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+table{width:100%;border-collapse:collapse}
+td,th{border:1px solid #ddd;padding:10px}
+footer{background:#222;color:#fff;padding:40px 5%}
+input,textarea,select{width:100%;padding:10px;margin:8px 0}
+button{padding:12px 20px;background:#d97706;color:white;border:none;border-radius:8px}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<h2>🕉 Pracheen Shiv Mandir</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#deities">Deities</a></li>
+<li><a href="#pooja">Pooja</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#donate">Donate</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Welcome to Pracheen Shiv Mandir</h1>
+<p>A sacred place for devotion, service, and spiritual growth.</p>
+<a class="btn" href="#pooja">Book Pooja</a>
+<a class="btn" href="#donate">Donate</a>
+<a class="btn" href="#events">Events</a>
+</section>
+
+<section>
+<h2>Temple Timings</h2>
+<table>
+<tr><th>Activity</th><th>Time</th></tr>
+<tr><td>Mangala Aarti</td><td>5:30 AM</td></tr>
+<tr><td>Morning Darshan</td><td>6 AM - 12 PM</td></tr>
+<tr><td>Evening Darshan</td><td>4 PM - 9 PM</td></tr>
+<tr><td>Shayan Aarti</td><td>8:30 PM</td></tr>
+</table>
+</section>
+
+<section id="about">
+<h2>About the Temple</h2>
+<p>Share your temple history, mission, trustees, spiritual heritage, and community service initiatives here.</p>
+</section>
+
+<section id="deities">
+<h2>Main Deities</h2>
+<div class="cards">
+<div class="card"><h3>Lord Krishna</h3><p>Description and significance.</p></div>
+<div class="card"><h3>Lord Shiva</h3><p>Description and significance.</p></div>
+<div class="card"><h3>Goddess Lakshmi</h3><p>Description and significance.</p></div>
+<div class="card"><h3>Lord Ganesha</h3><p>Description and significance.</p></div>
+</div>
+</section>
+
+<section id="pooja">
+<h2>Book a Pooja</h2>
+<form>
+<input placeholder="Full Name">
+<input placeholder="Phone Number">
+<input type="email" placeholder="Email">
+<select>
+<option>Select Pooja</option>
+<option>Satyanarayan Pooja</option>
+<option>Rudrabhishek</option>
+<option>Lakshmi Pooja</option>
+</select>
+<input type="date">
+<textarea placeholder="Special Requests"></textarea>
+<button type="submit">Book Now</button>
+</form>
+</section>
+
+<section id="events">
+<h2>Upcoming Events</h2>
+<div class="cards">
+<div class="card"><h3>Janmashtami</h3><p>Festival celebration details.</p></div>
+<div class="card"><h3>Navratri</h3><p>Festival celebration details.</p></div>
+<div class="card"><h3>Diwali Mahotsav</h3><p>Festival celebration details.</p></div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="cards">
+<div class="card">Temple Photo 1</div>
+<div class="card">Temple Photo 2</div>
+<div class="card">Temple Photo 3</div>
+</div>
+</section>
+
+<section id="donate">
+<h2>Donate</h2>
+<div class="cards">
+<div class="card">₹501</div>
+<div class="card">₹1101</div>
+<div class="card">₹2101</div>
+<div class="card">Custom Donation</div>
+</div>
+<br>
+<button>Donate Now</button>
+</section>
+
+<section>
+<h2>Volunteer Registration</h2>
+<form>
+<input placeholder="Name">
+<input placeholder="Phone">
+<input placeholder="Skills">
+<button>Join Seva Program</button>
+</form>
+</section>
+
+<section>
+<h2>Newsletter</h2>
+<input placeholder="Email Address">
+<button>Subscribe</button>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<form>
+<input placeholder="Name">
+<input placeholder="Email">
+<textarea placeholder="Message"></textarea>
+<button>Send Message</button>
+</form>
+</section>
+
+<footer>
+<h3>Pracheen Shiv Mandir Portal</h3>
+<p>Address • Phone • Email</p>
+<p>Facebook • Instagram • YouTube</p>
+</footer>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+</body>
+</html>
